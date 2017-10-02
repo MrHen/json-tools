@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "codemirror": "^5.29.0"
+    "codemirror": "^5.29.0",
+    "gh-pages-deploy": "^0.4.2"
   },
   "devDependencies": {
     "@types/codemirror": "0.0.46",
@@ -19,6 +20,7 @@
   },
   "scripts": {
     "build": "docker-compose up build",
+    "deploy": "",
     "postinstall": "docker-compose up install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "docker-compose up watch"
