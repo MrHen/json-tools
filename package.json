@@ -25,9 +25,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "docker-compose up watch"
   },
-  "gh-pages-deploy": {
-    "staticpath": "dist"
-  },
   "author": "Adam Babcock",
   "license": "MIT"
 }
