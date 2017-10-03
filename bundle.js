@@ -12336,7 +12336,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "html {\n    font-size: 16px;\n}\n\nbody {\n    background-color: darkgrey;\n    padding: 1rem;\n    margin: 0 auto;\n    width: 800px;\n    font-family: sans-serif;\n}\n\nhr {\n    border: none;\n    background-color: #333;\n    height: 0.05rem;\n    margin: 0.45rem 0;\n}\n\n.button-container {\n    text-align: center;\n}\n\nbutton {\n    background-color: #eee;\n    height: 2rem;\n    width: 9.5rem;\n    padding: 0.4375rem;\n    margin: 0 0.25rem;\n    border: 0.0625rem solid black;\n    font: inherit;\n    line-height: 1rem;\n}\n\n.code-container {\n    margin: 0 0.4375rem;\n    border: 0.0625rem solid black;\n}\n\n.code-container .CodeMirror {\n    height: 35rem;\n}\n", ""]);
+exports.push([module.i, "html {\n    font-size: 16px;\n}\n\nbody {\n    background-color: darkgrey;\n    padding: 1rem;\n    margin: 0 auto;\n    width: 50rem;\n    font-family: sans-serif;\n}\n\nhr {\n    border: none;\n    background-color: #333;\n    height: 0.0625rem;\n    margin: 0.4375rem 0 0.5rem 0;\n}\n\n.button-container {\n    text-align: center;\n}\n\nbutton {\n    background-color: #eee;\n    height: 2rem;\n    width: 9.5rem;\n    padding: 0.4375rem;\n    margin: 0 0.25rem;\n    border: 0.0625rem solid black;\n    font: inherit;\n    line-height: 1rem;\n}\n\n.code-container {\n    margin: 0 0.4375rem;\n    border: 0.0625rem solid black;\n    position: absolute;\n    width: 49rem;\n    top: 4rem;\n    bottom: 1rem;\n}\n\n.code-container .CodeMirror {\n    height: auto;\n}\n", ""]);
 
 // exports
 
