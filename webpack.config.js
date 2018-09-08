@@ -10,6 +10,13 @@ module.exports = {
     libraryTarget: 'var',
     library: 'JsonTools'    
   },
+  target: "web",
+  node: {
+    file: "empty",
+    fs: "empty",
+    process: true,
+    system: "empty",
+  },
   module: {
     loaders: [
       {
@@ -33,6 +40,10 @@ module.exports = {
     new webpack.ProvidePlugin({
       "jsonlint": ["jsonlint", "parser"],
       "window.jsonlint": ["jsonlint", "parser"]
+    }),
+    new webpack.ProvidePlugin({
+      "json5": ["json5", "dist"],
+      "window.json5": ["json5", "dist"]
     })
   ],
   resolve: {

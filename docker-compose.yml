@@ -5,12 +5,14 @@ services:
     command: npm rebuild -q
     volumes:
       - .:/app
+    tty: true
 
   build:
     image: jmfirth/webpack
     command: webpack
     volumes:
       - .:/app
+    tty: true
   
   watch:
     image: jmfirth/webpack
@@ -19,3 +21,4 @@ services:
       - .:/app
     ports:
       - "3000:8080"
+    tty: true

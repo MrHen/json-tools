@@ -7,6 +7,7 @@ import 'codemirror/addon/lint/lint.js';
 import 'codemirror/addon/lint/json-lint';
 
 import * as CodeMirror from "codemirror";
+import * as JSON5 from "json5";
 
 import "./stylesheet.css";
 
@@ -37,7 +38,7 @@ function getContent () {
   return value
 }
 
-function setContent (value) {
+function setContent (value: string) {
   return editor ? editor.setValue(value) : null
 }
 
@@ -69,6 +70,14 @@ export function parse () {
     var value = getContent();
     var json = JSON.parse(value)
     json = JSON.parse(json)
+    setContent(JSON.stringify(json))
+  } catch (e) {}
+}
+
+export function convert () {
+  try {
+    var value = getContent();
+    var json = JSON5.parse(value)
     setContent(JSON.stringify(json))
   } catch (e) {}
 }
